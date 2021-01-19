@@ -1,7 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,500;0,700;1,300&display=swap');
 
-*, body {
-  font-family: 'Ubuntu', sans-serif;
+body, 
+  h1, h2, h3, h4, h5, h6,
+  input
+  {
+    font-family: 'Ubuntu', sans-serif !important;
+  }
+
+  p {
+    font-weight: 100;
+    font-size: 1em;
+  }
+
+.this-share-button {
+  padding-top: 90px;
 }
 
-.this-share-button{padding-top:90px}
+h2 {
+  font-weight: 300;
+  font-size: 1.5em;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 8vh;
+  background-color: rgb(111, 188, 255);
+  position: fixed;
+  top: 0;
+}
