@@ -29,7 +29,7 @@ module.exports = {
             'build.js',
             'index.js',
             'precache-manifest*',
-            'sw.js',
+            // 'sw.js',
         ]),
         new ExtractTextPlugin('css/index.css'),
     ],
