@@ -12,7 +12,7 @@ self.__precacheManifest = [
     "url": "bundle.js"
   },
   {
-    "revision": "b4254601a9fdb5e2fca94c63b9bfdd2c",
+    "revision": "93a9d7b5137e00a23e4643eb6ed58520",
     "url": "css/index.css"
   },
   {
@@ -72,11 +72,15 @@ self.__precacheManifest = [
     "url": "img/icons/safari-pinned-tab.svg"
   },
   {
-    "revision": "d0855cf978b39bfc5c61cbbc963b14fc",
+    "revision": "fd06bc7ca8ce4d3a172436f769328f23",
     "url": "index.html"
   },
   {
     "revision": "ad036e9e11b3e67c96c88a4cb0e470e3",
     "url": "manifest.json"
+  },
+  {
+    "revision": "6133ae79429b3ab699556ff7eafd880a",
+    "url": "sw.js"
   }
 ];
