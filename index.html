@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SigDig: Meu Signo Digital</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="img/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/icons/favicon-16x16.png">
+    <link rel="manifest" href="manifest.json">
+    <link rel="mask-icon" href="img/icons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="img/icons/favicon.ico">
+    
+    <meta name="apple-mobile-web-app-title" content="SigDig">
+    <meta name="application-name" content="SigDig">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="img/icons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- CSS dependencies -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.0.0/sketchy/bootstrap.min.css" integrity="sha256-+gbt0dO/Kj8uj9+npTluP6cEFYJ4XAw8QYKAsH5HUrc="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/css/bootstrap-datepicker.css"
+        integrity="sha256-I/m6FhcACNYmRoqn1xUnizh6S7jOJsTq+aiJ6BtE2LE=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cadeoleo.github.io/bower_components/share-button/share-button.min.css">
+    <link rel="stylesheet" href="css/index.css">
+
+</head>
+<body>
+    <div>
+        <div class="container">
+            <div class="header">
+                
+            </div>
+            <div class="row">
+                <div class="text-center col-md-7 mx-auto">
+                    <i class="fa d-block fa-search fa-5x mb-4 text-dark"></i>
+                        <h1>SigDig: Signo Digital</h1>
+                        <small class="text-muted">Descubra aqui seu Signo, Signo Chinês e Signo Nerd !!</small>
+                    </h1>
+                   
+                </div>
+            </div>
+            <hr class="mb-4">
+        </div>
+    </div>
+    <div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 order-md-1">
+                    <div id="find">
+                        <h3 class="text-center">Vamos lá?</h3>
+                        <div class="mb-3">
+                            <div class="input-group date text-center col-md-4 mx-auto">
+                                <input type="text" class="form-control form-control-lg text-center" id="dataNascimento" placeholder="Data de nascimento" required="">
+                                <div class="input-group-append">
+                                    <span class="input-group-text"><i class="fa fa-calendar"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-center">
+                            <button id="botao-abre-modal" type="button" class="d-none btn btn-success btn-sm" data-toggle="modal" data-target="#resultado-modal">Descubra »</button>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <hr class="mb-4">
+        </div>
+    </div>
+    <div class="container text-center" id="info">
+        <h3>Horóscopo - Origem</h3>
+        <p>O horóscopo é uma espécie de diagrama que define as posições relativas dos planetas e dos signos zodiacais num determinado dia específico, geralmente definido como o do nascimento de uma pessoa. A partir desse diagrama, então, os astrólogos tentam definir o caráter e a personalidade da pessoa, bem como prever fatos importantes em sua vida. Nesse sentido, o termo horóscopo é similar ao de um mapa astrológico.
+            <br>
+        </p>
+        <hr>
+        <h3>Horóscopo Chinês</h3>
+        <p>Segundo uma antiga lenda chinesa, Buda convidou todos os animais da criação para uma festa de Ano Novo, prometendo uma surpresa a cada um dos animais. Apenas doze animais compareceram e ganharam um ano de acordo com a ordem de chegada: o Rato ou Camundongo; O Boi ou Búfalo (Vaca, na Tailândia); o Tigre (Pantera, na Mongólia); O Coelho (Gato, na Tailândia); o Dragão (Crocodilo, na Pérsia); a Cobra ou Serpente (Pequeno Dragão, na Tailândia); o Cavalo; a Cabra, bode ou Carneiro; o Galo ou Galinha; o Macaco; o Cão; o Porco ou Javali. O Cavalo de Fogo rege a cada 60 anos.
+            De acordo com um antigo texto budista, quando os animais terminam suas meritórias tarefas, fazem um juramento solene perante os budas de que um deles estará sempre, por um dia e por uma noite, pelo mundo, pregando e convertendo, enquanto os outros onze ficam praticando o bem em silêncio. O Rato inicia sua jornada no primeiro dia da sétima Lua; procura persuadir os nativos do seu signo a praticarem boas ações e a corrigirem os defeitos de seus temperamentos. Os demais bichos fazem o mesmo, sucessivamente, e o Rato reinicia seu trabalho no 13º dia. Assim, graças ao trabalho constante dos animais, os budas garantem uma certa ordem no universo.</p>
+        <br>
+        <p>Seus problemas acabaram! Com o SigDig, você tem tudo isso na palma da mão! Ou não! 😉</p>
+
+    </div>
+    <div class="modal text-center" id="resultado-modal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title"><b><span id="data-escolhida">XYZ</span></b>, o que temos para essa data?</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <ul class="list-group">
+                        <li class="list-group-item list-group-item-primary"><b><span id="signo-tradicional">XYZ</span></b> no <a href="https://pt.wikipedia.org/wiki/Zod%C3%ADaco">horóscopo tradicional 😝</a></li>
+                        <li class="list-group-item list-group-item-secondary"><b><span id="signo-chines">XYZ</span></b> no <a href="https://pt.wikipedia.org/wiki/Hor%C3%B3scopo_chin%C3%AAs">horóscopo chinês 😎</a></li>
+                        <li class="list-group-item list-group-item-info"><b><span id="signo-nerd">XYZ</span></b> no <a href="https://www.tecmundo.com.br/infografico/9712-erro-404-quem-e-voce-no-zodiaco-nerd-infografico-.htm">horóscopo nerd 😸</a></li>
+                    </ul>
+                    <p class="text-center this-share-button" style="display: none">
+                        <share-button></share-button>
+                    </p>
+                    <p class="text-center alert alert-success"><a href="https://twitter.com/search?f=tweets&q=SigDig"><i class="fa fa-twitter"></i> #SigDig</a></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="text-muted text-center">
+        <div class="container">
+            <hr class="mb-4">
+            <div class="row">
+                <div class="col-md-12 my-4">
+                    <p class="mb-1">
+                        <a href="https://pradoj.com">© PradoJ.com</a>
+                    </p>
+                    <ul class="list-inline">
+                        <li class="list-inline-item">
+                            <a href="https://github.com/pradoj/SigDig">GitHub Repo</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://cadeoleo.github.io/">CadêOLéo</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://github.com/pradoj">PradoJ.com no GitHub</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Check that service workers are registered
+        if ('serviceWorker' in navigator) {
+            // Use the window load event to keep the page load performant
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('sw.js');
+            });
+        }
+    </script>
+    
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-114419064-1', 'auto');
+
+
+        // Set default value of custom dimension 1 to 'online'
+        ga('set', 'dimension1', 'online');
+
+
+        ga('send', 'pageview');
+    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js" integrity="sha256-uz0BcnPtSHZ02XZthAHPRYIoWWrcwMOmAk9ErnFQkNs="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/js/bootstrap-datepicker.js" integrity="sha256-7Ls/OujunW6k7kudzvNDAt82EKc/TPTfyKxIE5YkBzg="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/locales/bootstrap-datepicker.pt-BR.min.js"
+        integrity="sha256-QN6KDU+9DIJ/9M0ynQQfw/O90ef0UXucGgKn0LbUtq4=" crossorigin="anonymous"></script>
+    <script src="https://cadeoleo.github.io/bower_components/share-button/share-button.js"></script>
+    <script src="index.js"></script>
+    
+
+</body>
+</html>
